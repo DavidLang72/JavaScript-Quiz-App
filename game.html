@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Quiz Page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/game.css">
 </head>
 <body>
 <div class="container">
-    <div id="game" class="justify center felw-column">
+    <div id="game" class="justify center flex-column">
         <div id="hud">
             <div class="hud-item">
                 <p id="progressText" class="hud-prefix">
@@ -30,7 +30,7 @@
                 </h1>
             </div>
         </div>
-        <div id="question">What is the Answer to this question</div>
+        <h1 id="question">What is the Answer to this question</h1>
         <div class="choice-container">
             <p class="choice-prefix">A</p>
             <p class="choice-text" data-number="1">Choice</p>
@@ -49,6 +49,7 @@
         </div>
     </div>
 </div>
+<script src="assets/js/game.js"></script>
 </body>
 
 </html>
