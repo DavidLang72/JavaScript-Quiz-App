@@ -62,7 +62,7 @@ getNewQuestion = () => {
     if(availQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('Assets/html/end.html')
+        return window.location.assign('end.html')
     }
     
     questionCounter++
@@ -121,7 +121,7 @@ function setTime() {
         clearInterval(timerInterval);
         localStorage.setItem('mostRecentScore', 0)
         // Calls function to create and append image
-        return window.location.assign('Assets/html/end.html')
+        return window.location.assign('end.html')
       }
   
     }, 1000);
