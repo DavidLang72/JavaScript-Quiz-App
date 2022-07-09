@@ -9,6 +9,7 @@ var acceptingAnswers = true
 var score = 0
 var questionCounter = 0
 var availQuestions = []
+var secondsLeft = score
 
 var questions = [
    {
@@ -47,12 +48,12 @@ var questions = [
    }
 ]
 
-var SCORE_POINTS = 100
+var SCORE_POINTS = 15
 var MAX_QUESTIONS = 4
 
 startGame = () => {
     questionCounter = 0
-    score = 0
+    score = 60
     availQuestions = [...questions]
     getNewQuestion()
 }
@@ -91,8 +92,8 @@ choices.forEach(choice =>  {
         var selectedAnswer = selectedChoice.dataset['number']
 
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
-        if(classToApply === 'correct') {
-            incrementScore(SCORE_POINTS)
+        if(classToApply === 'incorrect') {
+            decrementScore(SCORE_POINTS)
         }
 
         selectedChoice.parentElement.classList.add(classToApply)
@@ -104,10 +105,28 @@ choices.forEach(choice =>  {
     })
 })
 
-incrementScore = num => {
-    score +=num
+decrementScore = num => {
+    score -=num
     scoreText.innerText = score
 }
 
+function setTime() {
+    // Sets interval in variable
+    var timerInterval = setInterval(function() {
+      score--;
+      scoreText.textContent = score;
+  
+      if(score === 0) {
+        // Stops execution of action at set interval
+        clearInterval(timerInterval);
+        localStorage.setItem('mostRecentScore', 0)
+        // Calls function to create and append image
+        return window.location.assign('end.html')
+      }
+  
+    }, 1000);
+  }
+
+setTime()
 startGame()
 
