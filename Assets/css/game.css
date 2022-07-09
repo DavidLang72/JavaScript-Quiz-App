@@ -27,7 +27,6 @@ body {
 .choice-text {
     padding: 2rem;
     width:100%;
-
 }
 
 .correct {
@@ -48,16 +47,11 @@ body {
     font-size: 2rem;
 }
 
-.hud-item {
-    text-align: center;
-    font-size: 2rem;
-}
-
 .hud-main-text {
     text-align: center;
 }
 
-#progressbar {
+#progressBar {
     width: 20rem;
     height: 3rem;
     border: 0.2rem solid greenyellow;
@@ -66,7 +60,7 @@ body {
     overflow: hidden;
 }
 
-#progressbarfull {
+#progressBarFull {
     height:100%;
     background: greenyellow;
     width: 0%;

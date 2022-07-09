@@ -2,7 +2,7 @@ var question = document.querySelector('#question');
 var choices = Array.from(document.querySelectorAll('.choice-text'));
 var progressText = document.querySelector('#progressText');
 var scoreText = document.querySelector('#score');
-var progressBarFull = document.querySelector('#progressbarfull');
+var progressBarFull = document.querySelector('#progressBarFull');
 
 var currentQuestion = {}
 var acceptingAnswers = true
@@ -62,8 +62,8 @@ getNewQuestion = () => {
         localStorage.setItem('mostRecentScore', score)
 
         return window.location.assign('end.html')
-    
     }
+    
     questionCounter++
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
