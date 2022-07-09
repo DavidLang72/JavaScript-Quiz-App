@@ -13,37 +13,37 @@ var secondsLeft = score
 
 var questions = [
    {
-    question: 'what is 2 + 2?',
-    choice1: '2',
-    choice2: '4',
-    choice3: '3.1415',
-    choice4: '0',
+    question: 'What does HTML stand for',
+    choice1: 'Hyperspace Terminal Mezzazine Link',
+    choice2: 'Hypertext Markup Language',
+    choice3: 'HammerTime Makes Loot',
+    choice4: 'Hey the Mariners Lost',
     answer: 2,
 
    },
    {
-    question: 'what is 2 + 2?',
-    choice1: '2',
-    choice2: '4',
-    choice3: '3.1415',
-    choice4: '0',
-    answer: 2,
+    question: 'What does CSS stand for',
+    choice1: 'Customized Style Sheet',
+    choice2: 'Custard SuperStore',
+    choice3: 'Cantelope Strawberry Shortcake',
+    choice4: 'Corrugated Stainless Steel',
+    answer: 1,
 
    },   {
-    question: 'what is 2 + 2?',
-    choice1: '2',
-    choice2: '4',
-    choice3: '3.1415',
-    choice4: '0',
-    answer: 2,
+    question: 'JavaScript is a/an _____________ language',
+    choice1: 'procedural',
+    choice2: 'object based',
+    choice3: 'object oriented',
+    choice4: 'foreign',
+    answer: 3,
 
    },   {
-    question: 'what is 2 + 2?',
-    choice1: '2',
-    choice2: '4',
-    choice3: '3.1415',
-    choice4: '0',
-    answer: 2,
+    question: 'Which function is used to serialize an object into a JSON string in Javascript?',
+    choice1: 'convert ()',
+    choice2: 'parse ()',
+    choice3: 'serialize ()',
+    choice4: 'stringify ()',
+    answer: 4,
 
    }
 ]
